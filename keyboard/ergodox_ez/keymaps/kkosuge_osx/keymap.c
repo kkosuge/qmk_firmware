@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------| EI   |           | Kana |------+------+------+------+------+--------|
  * | LShift |Z/Ctrl|   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |  /   | RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |  F4  |  =   |  '"  | EI   | LCmd |                                       | Kana | Left | Down |  Up  | Right  |
+ *   |  F7  |  =   |  '"  | EI   | LCmd |                                       | Kana | Left | Down |  Up  | Right  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,--------------.
  *                                        | Prev | Next |       | VolUp | Play |
@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,    KC_Q,         KC_W,    KC_E,   KC_R,   KC_T,   TG(1),
         KC_LCTRL,  KC_A,         KC_S,    KC_D,   KC_F,   KC_G,
         KC_LSHIFT, CTL_T(KC_Z),  KC_X,    KC_C,   KC_V,   KC_B,   LCTL(LSFT(KC_SCLN)),
-        KC_F4,     KC_EQL,       KC_QUOT, LCTL(RSFT(KC_SCLN)), KC_LGUI,
+        KC_F7,     KC_EQL,       KC_QUOT, LCTL(RSFT(KC_SCLN)), KC_LGUI,
                                               KC_MPRV,  KC_MNXT,
                                                                  KC_HOME,
                                               KC_SPC,   KC_BSPC, KC_END,
