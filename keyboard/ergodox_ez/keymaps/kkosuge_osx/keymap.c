@@ -15,10 +15,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * | Esc    |   1  |   2  |   3  |   4  |   5  | LEFT |           |   6  |   7  |   8  |   9  |   0  |  -   | Del    |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * | Tab    |   Q  |   W  |   E  |   R  |   T  |      |           |   =  |   Y  |   U  |   I  |   O  |  P   | '"     |
+ * | Tab    |   Q  |   W  |   E  |   R  |   T  |  `   |           |   =  |   Y  |   U  |   I  |   O  |  P   | '"     |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * | LCtrl  |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |  ;   | [      |
- * |--------+------+------+------+------+------| EI   |           |   \  |------+------+------+------+------+--------|
+ * |--------+------+------+------+------+------|  ~   |           |   \  |------+------+------+------+------+--------|
  * | LShift |Z/Ctrl|   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |  /   | ]      |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *   |  L1  |  L2  |  F7  |      |   EI |                                       | Kana | Left | Down |  Up  | Right  |
@@ -36,9 +36,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [BASE] = KEYMAP(  // layer 0 : default
         // left hand
         KC_ESC,    KC_1,         KC_2,    KC_3,   KC_4,   KC_5,   KC_LEFT,
-        KC_TAB,    KC_Q,         KC_W,    KC_E,   KC_R,   KC_T,   KC_LGUI,
+        KC_TAB,    KC_Q,         KC_W,    KC_E,   KC_R,   KC_T,   KC_GRV,
         KC_LCTRL,  KC_A,         KC_S,    KC_D,   KC_F,   KC_G,
-        KC_LSHIFT, CTL_T(KC_Z),  KC_X,    KC_C,   KC_V,   KC_B,   LCTL(LSFT(KC_SCLN)),
+        KC_LSHIFT, CTL_T(KC_Z),  KC_X,    KC_C,   KC_V,   KC_B,   KC_TILD,
         TG(1), TG(2), KC_F7,  KC_QUOT, LCTL(RSFT(KC_SCLN)),
                                               KC_MPRV,  KC_MNXT,
                                                                  LALT(KC_LSFT),
