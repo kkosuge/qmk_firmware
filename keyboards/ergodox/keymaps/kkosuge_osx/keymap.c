@@ -1,7 +1,7 @@
 // Netable differences vs. the default firmware for the ErgoDox EZ:
 // 1. The Cmd key is now on the right side, making Cmd+Space easier.
 // 2. The media keys work on OSX (But not on Windows).
-#include "ergodox_ez.h"
+#include "ergodox.h"
 #include "debug.h"
 #include "action_layer.h"
 
@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,    KC_Q,         KC_W,    KC_E,   KC_R,   KC_T,   KC_GRV,
         KC_LCTRL,  KC_A,         KC_S,    KC_D,   KC_F,   KC_G,
         KC_LSHIFT, CTL_T(KC_Z),  KC_X,    KC_C,   KC_V,   KC_B,   KC_TILD,
-        TG(1), TG(2), KC_F7,  KC_QUOT, LCTL(RSFT(KC_SCLN)),
+        TG(1), TG(2), KC_F7,  KC_QUOT, KC_LANG2,
                                               KC_MPRV,  KC_MNXT,
                                                                  LALT(KC_LSFT),
                                               KC_SPC,   KC_LGUI, LALT(KC_LSFT),
@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_EQL,  KC_Y, KC_U,    KC_I,    KC_O,    KC_P,    KC_QUOT,
                  KC_H, KC_J, KC_K,    KC_L,    KC_SCLN, KC_LBRC,
         KC_BSLS, KC_N, KC_M,    KC_COMM, KC_DOT,  KC_SLSH,   KC_RBRC,
-        RCTL(RSFT(KC_J)), KC_LEFT, KC_DOWN, KC_UP,    KC_RGHT,
+        KC_LANG1, KC_LEFT, KC_DOWN, KC_UP,    KC_RGHT,
         KC_VOLU, KC_MPLY,
         KC_VOLD,
         KC_MUTE, KC_BSPC, KC_ENT
